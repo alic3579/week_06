@@ -1,4 +1,4 @@
-fetch('week_06/assets/my.json')
+fetch('https://alic3579.github.io/week_06/assets/my.json')
 .then(function(results){
 	return results.json()
 })
