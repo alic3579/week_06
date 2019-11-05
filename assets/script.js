@@ -1,4 +1,4 @@
-fetch('/assets/my.json')
+fetch('week_06/assets/my.json')
 .then(function(results){
 	return results.json()
 })
