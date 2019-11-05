@@ -7,7 +7,8 @@ fetch('https://alic3579.github.io/week_06/assets/my.json')
 	console.log("results: ", jsonResults)
 
 	document.querySelector("#root").insertAdjacentHTML('afterbegin', `
-		<h1 style="color:rgb(${jsonResults.color});">${jsonResults.title}</h1> 
+		<h1 style="font-family: Arial, Helvetica, sans-serif;
+		color:rgb(${jsonResults.color});">${jsonResults.title}</h1> 
 	`)
 
 })
@@ -22,7 +23,10 @@ fetch('https://api.kanye.rest/')
 })
 .then(function(jsonResults){
 
-	console.log("results: ", jsonResults)
+	console.log("Kanye quote: ", jsonResults)
+	document.querySelector("#quote").insertAdjacentHTML('afterbegin',`
+		<h2 style="font-family: Arial, Helvetica, sans-serif;"> "${jsonResults.quote}" by Kanye West </h2>
+		`)
 
 
 })
